@@ -3,18 +3,19 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-//call by reference
-void swap (int *x,int *y){
-	int temp;
-	temp=*x;
-	*x=*y;
-	*y=temp;
+int main(void){
+	int i;
+	//int sum=0;
+	int grade[5];
+	for (i=0;i<5;i++){
+		printf("input value (%i) : ",i);
+		scanf("%d",&grade[i]);
+		//sum += grade[i];
+	}
+	for (i=0;i<5;i++)
+		printf("grade[%d] = %d\n",i,grade[i]);
+		
+	//printf("\n\naverage : %d",sum/5);
+	return 0;
 }
-void main(viod){
-	int a=3;
-	int b=5;
-	swap(&a,&b);
-	printf("a:%i, b:%i\n",a,b);
-}
-
 
